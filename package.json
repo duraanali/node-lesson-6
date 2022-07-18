@@ -1,0 +1,28 @@
+{
+  "name": "node-auth1-guided",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "ketchup": "git fetch && git reset --hard origin/lecture",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabischool"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.1.0",
+    "knex-cleaner": "^1.3.1",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/archive/refs/tags/v4.2.0.tar.gz"
+  }
+}
